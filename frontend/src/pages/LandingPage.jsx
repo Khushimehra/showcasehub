@@ -6,6 +6,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import ClientsSection from "../components/ClientsSection";
 import ContactSection from "../components/ContactSection";
 import SubscribeSection from "../components/SubscribeSection";
+import Footer from "@/components/Footer";
 
 export default function Landing() {
   return (
@@ -18,6 +19,7 @@ export default function Landing() {
       <ClientsSection />
       <ContactSection />
       <SubscribeSection />
+      <Footer />
     </>
   );
 }
