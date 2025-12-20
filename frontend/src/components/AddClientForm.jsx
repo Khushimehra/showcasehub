@@ -18,7 +18,7 @@ export default function AddClientForm() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await fetch("http://localhost:5000/api/clients", {
+    await fetch("https://showcasehub-5tq3.onrender.com/api/clients", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

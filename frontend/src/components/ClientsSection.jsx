@@ -5,7 +5,9 @@ export default function ClientsSection() {
 
   useEffect(() => {
     async function fetchClients() {
-      const res = await fetch("http://localhost:5000/api/clients");
+      const res = await fetch(
+        "https://showcasehub-5tq3.onrender.com/api/clients"
+      );
       const data = await res.json();
       setClients(data);
     }

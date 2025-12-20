@@ -6,7 +6,7 @@ export default function SubscribeSection() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await fetch("http://localhost:5000/api/subscribers", {
+    await fetch("https://showcasehub-5tq3.onrender.com/api/subscribers", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),

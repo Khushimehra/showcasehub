@@ -5,7 +5,9 @@ export default function ProjectsSection() {
 
   useEffect(() => {
     async function fetchProjects() {
-      const res = await fetch("http://localhost:5000/api/projects");
+      const res = await fetch(
+        "https://showcasehub-5tq3.onrender.com/api/projects"
+      );
       const data = await res.json();
       setProjects(data);
     }

@@ -7,7 +7,9 @@ export default function ContactsList() {
   useEffect(() => {
     async function fetchContacts() {
       try {
-        const res = await fetch("http://localhost:5000/api/contacts");
+        const res = await fetch(
+          "https://showcasehub-5tq3.onrender.com/api/contacts"
+        );
         const data = await res.json();
         setContacts(data);
       } catch (err) {

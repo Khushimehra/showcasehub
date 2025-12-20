@@ -7,7 +7,9 @@ export default function SubscribersList() {
   useEffect(() => {
     async function fetchSubs() {
       try {
-        const res = await fetch("http://localhost:5000/api/subscribers");
+        const res = await fetch(
+          "https://showcasehub-5tq3.onrender.com/api/subscribers"
+        );
         const data = await res.json();
         setSubs(data);
       } catch (err) {

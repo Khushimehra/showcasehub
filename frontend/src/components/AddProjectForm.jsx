@@ -20,7 +20,7 @@ export default function AddProjectForm() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    await fetch("http://localhost:5000/api/projects", {
+    await fetch("https://showcasehub-5tq3.onrender.com/api/projects", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
