@@ -21,15 +21,15 @@ The application focuses on simplicity, scalability, and real-world admin-based w
 * ✏️ Edit existing projects
 * ❌ Delete projects
 * 🔐 Secure admin access
-* 🚀 **Get Started button that redirects to the Admin Panel**
+* 🚀 **Icons that redirects to the Admin Panel and Home**
 
 ---
 
 ## 🧠 How It Works
 
 * Visitors can explore all listed projects on the home page.
-* The **Get Started** button is provided on the main page.
-* Clicking **Get Started** redirects the user to the **Admin Panel**.
+* The admin icon is provided on the main page.
+* Clicking on admin icon redirects the user to the **Admin Panel**.
 * The admin panel allows managing all projects through a simple interface.
 
 ---
@@ -111,7 +111,7 @@ npm run dev
 
 ## 🔐 Admin Panel Access
 
-* The **Get Started** button on the home page navigates directly to the Admin Panel.
+* The admin icon on the home page navigates directly to the Admin Panel.
 * Admins can manage all projects from a single dashboard.
 
 ---
