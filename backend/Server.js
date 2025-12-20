@@ -13,14 +13,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("ShowcaseHub backend running");
+});
+
 app.use("/api/projects", projectRoutes);
 app.use("/api/clients", clientRoutes);
 app.use("/api/contacts", contactRoutes);
 app.use("/api/subscribers", subscriberRoutes);
-
-app.get("/", (req, res) => {
-  res.send("ShowcaseHub backend running");
-});
 
 const PORT = process.env.PORT || 5000;
 

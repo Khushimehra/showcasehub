@@ -1,19 +1,31 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 
 import AddProjectForm from "../components/AddProjectForm";
 import AddClientForm from "../components/AddClientForm";
 import ContactsList from "../components/ContactsList";
 import SubscribersList from "../components/SubscribersList";
-import { Dot } from "lucide-react";
+import { Dot, Home } from "lucide-react";
 
 export default function Admin() {
   return (
     <div className="min-h-screen bg-slate-100 px-4 py-6">
-      <div className="max-w-7xl mx-auto mb-6">
+      {/* Header */}
+      <div className="max-w-7xl mx-auto mb-6 flex items-center justify-between">
         <h1 className="text-3xl font-bold text-indigo-600">ShowcaseHub</h1>
+
+        {/* Home Icon */}
+        <Link
+          to="/"
+          className="p-2 rounded-full hover:bg-indigo-50 transition"
+          title="Go to Home"
+        >
+          <Home className="w-6 h-6 text-indigo-600" />
+        </Link>
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
+        {/* Sidebar */}
         <aside className="md:col-span-1 bg-white rounded-xl shadow p-5 space-y-6">
           <div>
             <h2 className="text-lg font-semibold text-gray-800">Overview</h2>
@@ -30,6 +42,7 @@ export default function Admin() {
           </div>
         </aside>
 
+        {/* Main Content */}
         <main className="md:col-span-4 bg-white rounded-xl shadow p-6">
           <div className="mb-6">
             <h1 className="text-2xl font-bold text-indigo-600">Admin Panel</h1>
